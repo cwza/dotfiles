@@ -1,0 +1,27 @@
+[user]
+    name = cwza
+    email = cwz0205a@gmail.com
+[init]
+    defaultBranch = main
+[push]
+    default = simple
+[core]
+    quotepath = false
+    editor = nvim
+    pager = delta
+    excludesFile = ~/.config/git/.gitignore
+[interactive]
+    navigate = true
+    light = false
+[diff]
+    colorMoved = default
+[delta]
+    side-by-side = true
+[merge]
+    conflictstyle = diff3
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
+    prompt = false
+[mergetool "vimdiff"]
+    cmd = "nvim  -d $MERGED $LOCAL $BASE $REMOTE -c 'wincmd J | wincmd ='"

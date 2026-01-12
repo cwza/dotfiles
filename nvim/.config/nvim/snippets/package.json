@@ -1,0 +1,31 @@
+{
+	"name": "snippets",
+	"contributes": {
+		"snippets": [
+			{
+				"language": [
+					"cpp"
+				],
+				"path": "./cpp.json"
+			},
+			{
+				"language": [
+					"cpp"
+				],
+				"path": "./segment-tree.json"
+			},
+			{
+				"language": [
+					"cpp"
+				],
+				"path": "./fenwick-tree.json"
+			},
+			{
+				"language": [
+					"cpp"
+				],
+				"path": "./modulo.json"
+			}
+		]
+	}
+}
