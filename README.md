@@ -47,6 +47,8 @@ sudo apt install git-delta
 sudo apt install stow
 sudo apt install zoxide
 sudo snap install tldr
+sudo apt install zsh
+sudo chsh $USER -s $(which zsh)
 ```
 * Install following cli tools from their official release page
     + bob
