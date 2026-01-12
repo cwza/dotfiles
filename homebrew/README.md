@@ -6,6 +6,6 @@
 * run `brew list --cask >| homebrew/brew_cask_pkg.txt`
 * `brew install` and `brew install --cask` reinstall these packages to new mac
 ``` sh
-bob use stable
+bob use nightly
 brew services start felixkratz/formulae/borders
 ```
