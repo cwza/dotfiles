@@ -26,10 +26,15 @@ vim.opt.termguicolors = true
 vim.opt.hlsearch = false
 
 -- fold
-vim.opt.foldenable = true
+vim.opt.foldenable = false
 vim.opt.foldcolumn = "1"
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
+
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+vim.g.netrw_winsize = 30
 
 -- others
 vim.opt.mouse = "a"

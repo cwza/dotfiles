@@ -17,3 +17,12 @@ vim.keymap.set('n', '<leader>wh', require('smart-splits').swap_buf_left, { desc 
 vim.keymap.set('n', '<leader>wj', require('smart-splits').swap_buf_down, { desc = "swap window down" })
 vim.keymap.set('n', '<leader>wk', require('smart-splits').swap_buf_up, { desc = "swap window up" })
 vim.keymap.set('n', '<leader>wl', require('smart-splits').swap_buf_right, { desc = "swap window right" })
+
+-- resolve netrw C-l key map conflict
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "netrw",
+    desc = "use C-l to move cursor instead of refresh while in netrw",
+    callback = function()
+        vim.keymap.set("n", "<C-l>", require("smart-splits").move_cursor_right, { remap = false, buffer = true })
+    end
+})

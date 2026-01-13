@@ -1,5 +1,7 @@
-vim.lsp.enable({ 'lua_ls' })
+vim.pack.add({ "https://github.com/onsails/lspkind.nvim" })
 
+-- lsp
+vim.lsp.enable({ 'lua_ls' })
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)
         local client = vim.lsp.get_client_by_id(ev.data.client_id)
@@ -10,7 +12,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end
     end,
 })
-
 vim.diagnostic.config({
     virtual_lines = {
         current_line = true,
@@ -23,4 +24,10 @@ vim.diagnostic.config({
             [vim.diagnostic.severity.INFO] = " ",
         },
     },
+})
+
+-- lspkind
+require('lspkind').init({
+    -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
+    mode = 'symbol_text',
 })

@@ -14,6 +14,10 @@ vim.keymap.set("n", "<leader>br", "<cmd>b#<CR>", { desc = "Go to previously edit
 
 -- window management (move, resize and swap are configured by smart-splits plugin)
 vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
+vim.keymap.set("n", "<leader>wH", "<C-w>H", { desc = "Move window to left most" })
+vim.keymap.set("n", "<leader>wJ", "<C-w>J", { desc = "Move window to bottom most" })
+vim.keymap.set("n", "<leader>wK", "<C-w>K", { desc = "Move window to top most" })
+vim.keymap.set("n", "<leader>wL", "<C-w>L", { desc = "Move window to right most" })
 
 -- tab management
 vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
