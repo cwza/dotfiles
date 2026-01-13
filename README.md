@@ -48,6 +48,7 @@ sudo apt install fzf
 sudo apt install git-delta
 sudo apt install stow
 sudo apt install zoxide
+sudo apt install lazygit
 sudo snap install tldr
 sudo apt install zsh
 sudo chsh $USER -s $(which zsh)
@@ -65,6 +66,7 @@ sudo chsh $USER -s $(which zsh)
 ``` sh
 stow fd
 stow git
+stow lazygit
 stow nvim
 stow ripgrep
 stow tmux
