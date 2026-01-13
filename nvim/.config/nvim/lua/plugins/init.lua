@@ -15,6 +15,8 @@ require("ibl").setup({})
 require("plugins.treesitter")
 require("plugins.smart-splits")
 require("plugins.telescope")
-require("plugins.markdown-preview")
 require("plugins.headlines")
 require("plugins.luasnip")
+if vim.loop.os_uname().sysname == "Darwin" then
+    require("plugins.markdown-preview")
+end
