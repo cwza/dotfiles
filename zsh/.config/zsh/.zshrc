@@ -31,23 +31,16 @@ source ${ZIM_HOME}/init.zsh
 
 ############################################################## homebrew
 if [[ "$machine" == "Mac" ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    brew_home="/opt/homebrew"
 elif [[ "$machine" == "Linux" ]]; then
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    brew_home="/home/linuxbrew/.linuxbrew"
 fi
+eval "$(${brew_home}/bin/brew shellenv)"
 
 ############################################################## fzf
 # Setup fzf
-if [[ "$machine" == "Mac" ]]; then
-    if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
-        PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
-    fi
-    [[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
-    source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
-elif [[ "$machine" == "Linux" ]]; then
-    source /usr/share/doc/fzf/examples/key-bindings.zsh
-    source /usr/share/doc/fzf/examples/completion.zsh
-fi
+source "${brew_home}/opt/fzf/shell/completion.zsh" 2> /dev/null
+source "${brew_home}/opt/fzf/shell/key-bindings.zsh"
 # fd to replace find, note: add --hidden --no-ignore to show hidden or git ignored files
 export FZF_DEFAULT_COMMAND="fd"
 export FZF_ALT_C_COMMAND="fd --type d . $HOME/"
