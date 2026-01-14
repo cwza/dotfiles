@@ -1,5 +1,5 @@
 return {
-    _log_path = '/Users/cwza/cwza/logs/nvimdebug.log',
+    _log_path = vim.env.HOME .. '/logs/nvim/nvimdebug.log',
     _this_is_a_log_table = true,
     write = function(self, ...)
         if not self._this_is_a_log_table then
