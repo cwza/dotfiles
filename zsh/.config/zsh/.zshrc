@@ -29,6 +29,13 @@ fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
+############################################################## homebrew
+if [[ "$machine" == "Mac" ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ "$machine" == "Linux" ]]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 ############################################################## fzf
 # Setup fzf
 if [[ "$machine" == "Mac" ]]; then
