@@ -19,7 +19,7 @@ local telescope = require("telescope")
 local actions = require("telescope.actions")
 telescope.setup({
     defaults = {
-        initial_mode = "normal",
+        initial_mode = "insert",
         path_display = { "smart" },
         mappings = {
             i = {
