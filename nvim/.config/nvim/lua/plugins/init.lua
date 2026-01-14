@@ -17,6 +17,4 @@ require("plugins.smart-splits")
 require("plugins.telescope")
 require("plugins.headlines")
 require("plugins.luasnip")
-if vim.loop.os_uname().sysname == "Darwin" then
-    require("plugins.markdown-preview")
-end
+require("plugins.markdown-preview")
