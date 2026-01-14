@@ -13,13 +13,14 @@
 * Run Stow
 ``` sh
 stow borders
+stow wezterm
+
 stow fd
 stow git
 stow lazygit
 stow nvim
 stow ripgrep
 stow tmux
-stow wezterm
 stow zsh
 ```
 * Use multipass to create an ubuntu instance
@@ -49,6 +50,10 @@ stow tmux
 stow zsh
 ```
 
+## Tmux
+* git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+* Press Ctrl-\ Shift-I in tmux to install plugins
+
 ## NeoVim Related Issues
 Somehow nvim autocmd after install not worked, so need to manually build these 3 plugins.
 * telescope-fzf-native.nvim
@@ -62,21 +67,20 @@ Somehow nvim autocmd after install not worked, so need to manually build these 3
     + `nvim .`
     + `:lua vim.fn["mkdp#util#install"]()`
 
-## Others
-* Follow instructions under [tmux/.config/tmux/README.md](tmux/.config/tmux/README.md) to install tmux plugins
-* For Mac use following to update apps
+## Update
+* For Mac
 ``` sh
 brew update
 brew upgrade
 bob update
-:lua vim.pack.update() # run this line in neovim
+:lua vim.pack.update()  # run this line in neovim
 ```
-* For Ubuntu use following to update apps
+* For Ubuntu
 ``` sh
 sudo apt update
 sudo apt upgrade
 brew update
 brew upgrade
 bob update
-:lua vim.pack.update()
+:lua vim.pack.update()  # run this line in neovim
 ```
