@@ -5,9 +5,11 @@ fd
 felixkratz/formulae/borders
 fzf
 gcc
+gemini-cli
 git-delta
 htop
 jq
+lazygit
 lua-language-server
 ripgrep
 stow

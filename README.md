@@ -23,6 +23,7 @@
 stow borders
 stow fd
 stow git
+stow lazygit
 stow nvim
 stow ripgrep
 stow tmux
