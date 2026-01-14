@@ -5,19 +5,11 @@
 
 ## For Mac
 * Run `xcode-select --install` and install command line tools from macos system update
-* Follow instructions under [homebrew/README.md](homebrew/README.md) to install some tools by homebrew
+* Follow instructions under [homebrew_mac/README.md](homebrew_mac/README.md) to install some tools by homebrew
 * Install following apps from their official website
     + Wezterm
     + VSCode
-* Install following cli tools from their official release page
-    + bob
-        - put binary into `~/.local/bin` and run `chmod +x ./bob`
-        - run `bob use nightly` to install latest neovim
-    + tree-sitter
-        - put binary into `~/.local/bin` and run `chmod +x ./tree-sitter`
-* Use multipass to create an ubuntu instance
-    + `multipass launch --name [instance name] --cpus 4 --memory 4G --disk 20`
-    + `multipass mount $HOME/multipass_share [instance name]:multipass_share`
+* Run `bob install nightly` and `bob use nightly` to install latest neovim
 * Run Stow
 ``` sh
 stow borders
@@ -30,39 +22,22 @@ stow tmux
 stow wezterm
 stow zsh
 ```
+* Use multipass to create an ubuntu instance
+    + `multipass launch --name [instance name] --cpus 4 --memory 4G --disk 20`
+    + `multipass mount $HOME/multipass_share [instance name]:multipass_share`
 
 ## For Ubuntu
-* Install followings from package manager
+* Run followings to install some tools from package manager
 ``` sh
 mkdir -p ~/.local/bin
 sudo apt update
 sudo apt upgrade
-
 sudo apt install build-essential
-sudo apt install eza
-sudo apt install ripgrep
-sudo apt install fd-find
-ln -s $(which fdfind) ~/.local/bin/fd
-sudo apt install bat
-ln -s $(which batcat) ~/.local/bin/bat
-sudo apt install fzf
-sudo apt install git-delta
-sudo apt install stow
-sudo apt install zoxide
-sudo apt install lazygit
-sudo snap install tldr
 sudo apt install zsh
 sudo chsh $USER -s $(which zsh)
 ```
-* Install following cli tools from their official release page
-    + bob
-        - put binary into `~/.local/bin` and run `chmod +x ./bob`
-        - run `bob use nightly` to install latest neovim
-    + tree-sitter
-        - put binary into `~/.local/bin` and run `chmod +x ./tree-sitter`
-    + lua-language-server
-        - put the folder into ~/.local/share
-        - run `ln -s ~/.local/share/lua-language-server/bin/lua-language-server ~/.local/bin/lua-language-server`
+* Follow instructions under [homebrew_ubuntu/README.md](homebrew_ubuntu/README.md) to install some tools by homebrew
+* Run `bob install nightly` and `bob use nightly` to install latest neovim
 * Run Stow
 ``` sh
 stow fd
@@ -100,6 +75,8 @@ bob update
 ``` sh
 sudo apt update
 sudo apt upgrade
+brew update
+brew upgrade
 bob update
 :lua vim.pack.update()
 ```

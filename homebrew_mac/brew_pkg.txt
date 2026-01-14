@@ -1,4 +1,5 @@
 bat
+bob
 cmake
 eza
 fd
@@ -16,5 +17,6 @@ stow
 tig
 tlrc
 tmux
+tree-sitter-cli
 yt-dlp
 zoxide
