@@ -1,0 +1,17 @@
+bat
+bob
+eza
+fd
+fzf
+gemini-cli
+git-delta
+htop
+jq
+lazygit
+lua-language-server
+ripgrep
+stow
+tig
+tlrc
+tree-sitter-cli
+zoxide
