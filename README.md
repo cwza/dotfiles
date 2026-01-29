@@ -12,6 +12,7 @@
 * Run `bob install nightly` and `bob use nightly` to install latest neovim
 * Run Stow
 ``` sh
+stow karabiner
 stow borders
 stow wezterm
 
