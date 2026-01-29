@@ -22,6 +22,7 @@ stow nvim
 stow ripgrep
 stow tmux
 stow zsh
+stow yazi
 ```
 * Use multipass to create an ubuntu instance
     + `multipass launch --name [instance name] --cpus 4 --memory 4G --disk 20G`

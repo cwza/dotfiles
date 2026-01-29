@@ -63,3 +63,5 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 ################################################################ Eza (Better ls)
 alias ls="eza --icons=always --group-directories-first --time-style=long-iso"
+################################################################ Yazi
+export EDITOR="nvim"
