@@ -23,8 +23,8 @@ stow lazygit
 stow nvim
 stow ripgrep
 stow tmux
-stow zsh
 stow yazi
+stow zsh
 ```
 * Use multipass to create an ubuntu instance
     + `multipass launch --name [instance name] --cpus 4 --memory 4G --disk 20G`
@@ -50,12 +50,13 @@ stow lazygit
 stow nvim
 stow ripgrep
 stow tmux
+stow yazi
 stow zsh
 ```
 
 ## Tmux
 * git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-* Press Ctrl-\ Shift-I in tmux to install plugins
+* Press prefix + Shift-I in tmux to install plugins
 
 ## NeoVim Related Issues
 Somehow nvim autocmd after install not worked, so need to manually build these 3 plugins.
