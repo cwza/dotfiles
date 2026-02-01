@@ -5,6 +5,7 @@
                 "rules": [
                     {
                         "description": "Post escape if caps is pressed alone, left_ctrl otherwise",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -35,6 +36,12 @@
             },
             "name": "Default profile",
             "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
+                }
+            ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
