@@ -61,10 +61,6 @@ vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 -- toggle relative line number
 vim.keymap.set("n", "<leader>ul", "<Cmd>set number <bar> setlocal relativenumber!<CR>", { desc = "toggle relative number" })
 
--- use C-j and C-j to navigate menu
-vim.keymap.set('i', '<C-j>', function() return vim.fn.pumvisible() == 1 and '<C-n>' or '<C-j>' end, { expr = true })
-vim.keymap.set('i', '<C-k>', function() return vim.fn.pumvisible() == 1 and '<C-p>' or '<C-k>' end, { expr = true })
-
 -- gx to open selected string by system
 function GetVisualSelection()
     vim.cmd('silent noau normal "vy')

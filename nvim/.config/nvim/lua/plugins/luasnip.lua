@@ -15,4 +15,4 @@ vim.pack.add({ "https://github.com/L3MON4D3/LuaSnip" })
 local ls = require("luasnip")
 require("luasnip.loaders.from_vscode").lazy_load({ paths = "./snippets" })
 
-vim.keymap.set({"i"}, "<C-space>", function() ls.expand() end, {silent = true})
+vim.keymap.set({"i"}, "<C-n>", function() ls.expand() end, {silent = true})
