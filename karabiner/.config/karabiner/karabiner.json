@@ -12,8 +12,8 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "parameters": {
-                                    "basic.to_delayed_action_delay_milliseconds": 50,
-                                    "basic.to_if_held_down_threshold_milliseconds": 50
+                                    "basic.to_delayed_action_delay_milliseconds": 100,
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
                                 },
                                 "to_delayed_action": { "to_if_canceled": [{ "key_code": "escape" }] },
                                 "to_if_alone": [
@@ -29,6 +29,7 @@
                     },
                     {
                         "description": "Disable Cmd+H Hide (rev 2)",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "description": "",
