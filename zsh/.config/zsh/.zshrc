@@ -43,7 +43,7 @@ source "${brew_home}/opt/fzf/shell/completion.zsh" 2> /dev/null
 source "${brew_home}/opt/fzf/shell/key-bindings.zsh"
 # fd to replace find, note: add --hidden --no-ignore to show hidden or git ignored files
 export FZF_DEFAULT_COMMAND="fd"
-export FZF_ALT_C_COMMAND="fd --type d . $HOME/"
+export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv"
 export FZF_ALT_C_OPTS="--preview 'eza {} -T -L=2 --color=always --icons=always'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --style=numbers --line-range=:500 {}'"
