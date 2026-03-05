@@ -7,15 +7,17 @@
 * Run `xcode-select --install` and install command line tools from macos system update
 * Follow instructions under [homebrew_mac/README.md](homebrew_mac/README.md) to install some tools by homebrew
 * Install following apps from their official website
-    + karabiner
+    + Karabiner
     + Wezterm
     + VSCode
+    + Amethyst
 * Run `bob install nightly` and `bob use nightly` to install latest neovim
 * Run Stow
 ``` sh
 stow karabiner
 stow borders
 stow wezterm
+stow amethyst
 
 stow fd
 stow git

@@ -1,0 +1,8 @@
+# https://github.com/ianyh/Amethyst/blob/development/.amethyst.sample.yml
+
+layouts:
+    - fullscreen
+    - two-pane
+# use mdls -name kMDItemCFBundleIdentifier -r "/Applications/Safari.app" to find app bundle id
+floating: ["com.apple.finder", "com.readdle.smartemail-Mac", "com.apple.systempreferences"]
+
