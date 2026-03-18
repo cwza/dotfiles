@@ -4,21 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "f13 as shift-f1",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "f13" },
-                                "to": [
-                                    {
-                                        "key_code": "f1",
-                                        "modifiers": ["left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Open Safari by cmd+opt+ctrl+j",
                         "manipulators": [
                             {
