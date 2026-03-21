@@ -4,12 +4,25 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Open Safari by cmd+opt+ctrl+j",
+                        "description": "Open Notes by cmd+shift+semicolon",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "mandatory": ["command", "shift"] }
+                                },
+                                "to": [{ "shell_command": "open -a 'Notes.app'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Open Safari by cmd+shift+j",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "j",
-                                    "modifiers": { "mandatory": ["command", "option", "control"] }
+                                    "modifiers": { "mandatory": ["command", "shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Safari.app'" }],
                                 "type": "basic"
@@ -17,25 +30,25 @@
                         ]
                     },
                     {
-                        "description": "Open WezTerm by cmd+opt+ctrl+k",
+                        "description": "Open Ghostty by cmd+shift+k",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "k",
-                                    "modifiers": { "mandatory": ["command", "option", "control"] }
+                                    "modifiers": { "mandatory": ["command", "shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'WezTerm.app'" }],
+                                "to": [{ "shell_command": "open -a 'Ghostty.app'" }],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Open Finder by cmd+opt+ctrl+l",
+                        "description": "Open Finder by cmd+shift+l",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "l",
-                                    "modifiers": { "mandatory": ["command", "option", "control"] }
+                                    "modifiers": { "mandatory": ["command", "shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Finder.app'" }],
                                 "type": "basic"
@@ -74,6 +87,19 @@
                         {
                             "from": { "key_code": "escape" },
                             "to": [{ "key_code": "caps_lock" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 43013,
+                        "vendor_id": 4617
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
                         }
                     ]
                 }

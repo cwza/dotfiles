@@ -8,7 +8,7 @@
 * Follow instructions under [homebrew_mac/README.md](homebrew_mac/README.md) to install some tools by homebrew
 * Install following apps from their official website
     + Karabiner
-    + Wezterm
+    + Ghostty
     + VSCode
     + Amethyst
 * Run `bob install nightly` and `bob use nightly` to install latest neovim
@@ -16,7 +16,7 @@
 ``` sh
 stow karabiner
 stow borders
-stow wezterm
+stow ghostty
 stow amethyst
 
 stow fd

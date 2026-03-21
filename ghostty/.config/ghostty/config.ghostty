@@ -1,0 +1,8 @@
+font-family = "MesloLGL Nerd Font"
+font-size = 24
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+keybind = f13=text:\x01 # send ctrl-a while receive F13
