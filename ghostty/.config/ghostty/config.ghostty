@@ -1,8 +1,9 @@
 font-family = "MesloLGL Nerd Font"
 font-size = 24
-
-macos-option-as-alt = true
-
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
+
+macos-option-as-alt = true
+# F13 as Ctrl-a
+keybind = f13=text:\x06
