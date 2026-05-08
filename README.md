@@ -12,6 +12,7 @@
     + VSCode
     + Amethyst
 * Run `bob install nightly` and `bob use nightly` to install latest neovim
+* Run `curl -fsSL https://raw.githubusercontent.com/RivoLink/leaf/main/scripts/install.sh | sh` to install leaf, a markdown terminal viewer
 * Run Stow
 ``` sh
 stow karabiner
@@ -44,6 +45,7 @@ sudo chsh $USER -s $(which zsh)
 ```
 * Follow instructions under [homebrew_ubuntu/README.md](homebrew_ubuntu/README.md) to install some tools by homebrew
 * Run `bob install nightly` and `bob use nightly` to install latest neovim
+* Run `curl -fsSL https://raw.githubusercontent.com/RivoLink/leaf/main/scripts/install.sh | sh` to install leaf, a markdown terminal viewer
 * Run Stow
 ``` sh
 stow fd
@@ -54,6 +56,14 @@ stow ripgrep
 stow tmux
 stow yazi
 stow zsh
+```
+
+## Set up sshd
+* Put your id_rsa and id_rsa.pub file into ~/.ssh/
+* Copy id_rsa.pub contents and paste into ~/.ssh/authorized_keys
+* Disable ssh password login `sudo nvim /etc/ssh/sshd_config` 
+```
+PasswordAuthentication no
 ```
 
 ## Tmux
