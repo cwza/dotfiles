@@ -23,8 +23,6 @@ telescope.setup({
         path_display = { "smart" },
         mappings = {
             i = {
-                ["<c-k>"] = actions.move_selection_previous, -- move to prev result
-                ["<c-j>"] = actions.move_selection_next, -- move to next result
                 ["<c-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
             },
             n = {

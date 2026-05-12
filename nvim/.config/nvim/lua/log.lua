@@ -1,3 +1,6 @@
+-- usage:
+-- local log = require("log")
+-- log:write("xxx")
 return {
     _log_path = vim.env.HOME .. '/logs/nvim/nvimdebug.log',
     _this_is_a_log_table = true,

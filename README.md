@@ -10,8 +10,7 @@
     + Karabiner
     + Ghostty
     + VSCode
-    + Amethyst
-* Run `bob install nightly` and `bob use nightly` to install latest neovim
+* Run `bob install stable` and `bob use stable` to install latest neovim
 * Run `curl -fsSL https://raw.githubusercontent.com/RivoLink/leaf/main/scripts/install.sh | sh` to install leaf, a markdown terminal viewer
 * Run Stow
 ``` sh
@@ -44,7 +43,7 @@ sudo apt install zsh
 sudo chsh $USER -s $(which zsh)
 ```
 * Follow instructions under [homebrew_ubuntu/README.md](homebrew_ubuntu/README.md) to install some tools by homebrew
-* Run `bob install nightly` and `bob use nightly` to install latest neovim
+* Run `bob install stabel` and `bob use stable` to install latest neovim
 * Run `curl -fsSL https://raw.githubusercontent.com/RivoLink/leaf/main/scripts/install.sh | sh` to install leaf, a markdown terminal viewer
 * Run Stow
 ``` sh
@@ -75,13 +74,6 @@ Somehow nvim autocmd after install not worked, so need to manually build these 3
 * telescope-fzf-native.nvim
     + `cd ~/.local/share/nvim/site/pack/core/opt/telescope-fzf-native.nvim`
     + `make`
-* LuaSnip
-    + `cd ~/.local/share/nvim/site/pack/core/opt/LuaSnip`
-    + `make install_jsregexp`
-* markdown-preview.nvim
-    + `cd ~/.local/share/nvim/site/pack/core/opt/markdown-preview.nvim`
-    + `nvim .`
-    + `:lua vim.fn["mkdp#util#install"]()`
 
 ## Update
 * For Mac

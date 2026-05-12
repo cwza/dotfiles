@@ -1,5 +1,3 @@
-vim.pack.add({ "https://github.com/onsails/lspkind.nvim" })
-
 -- lsp
 vim.lsp.enable({ 'lua_ls' })
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -26,8 +24,3 @@ vim.diagnostic.config({
     },
 })
 
--- lspkind
-require('lspkind').init({
-    -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
-    mode = 'symbol_text',
-})
