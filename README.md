@@ -17,7 +17,6 @@
 stow karabiner
 stow borders
 stow ghostty
-stow amethyst
 
 stow fd
 stow git
