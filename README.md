@@ -23,6 +23,7 @@ stow fd
 stow git
 stow lazygit
 stow nvim
+stow opencode
 stow ripgrep
 stow tmux
 stow yazi
