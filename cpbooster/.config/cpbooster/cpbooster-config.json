@@ -1,0 +1,27 @@
+{
+    "contestsDirectory": "/Users/cwza/cwza/cpcontest",
+    "port": 1327,
+    "editor": "nvim",
+    "closeAfterClone": false,
+    "showStatusPageOnSubmit": true,
+    "useUserDefaultBrowser": true,
+    "preferredLang": "cpp",
+    "hideTestCaseInput": false,
+    "cloneInCurrentDir": false,
+    "executableFileExtension": "exe",
+    "languages": {
+        "cpp": {
+            "template": "/Users/cwza/.config/cpbooster/template.cpp",
+            "command": "g++-15 -std=c++17 -Wall -Wextra -Wshadow -Wfloat-equal -D_GLIBCXX_DEBUG -D_GLIBCXX_ASSERTIONS -DDEBUG -fmax-errors=2",
+            "debugCommand": "g++-15 -std=c++17 -Wall -Wextra -Wshadow -Wfloat-equal -D_GLIBCXX_DEBUG -D_GLIBCXX_ASSERTIONS -DDEBUG -fmax-errors=2",
+            "aliases": {
+                "codeforces": "54",
+                "atcoder": "4003",
+                "omegaup": "cpp17-gcc"
+            },
+            "type": "compiled",
+            "commentString": "//"
+        }
+    }
+}
+
