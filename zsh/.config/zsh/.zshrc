@@ -57,7 +57,11 @@ _fzf_compgen_dir() {
 ############################################################### ripgrep
 export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/ripgreprc"
 ################################################################ Bob (NeoVim Version Manager)
-export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+if [[ "$machine" == "Mac" ]]; then
+    export PATH="$HOME/Library/Application Support/bob/nvim-bin:$PATH"
+elif [[ "$machine" == "Linux" ]]; then
+    export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+fi
 ################################################################ Zoxide (Better cd)
 eval "$(zoxide init zsh)"
 alias cd="z"

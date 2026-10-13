@@ -43,7 +43,7 @@ sudo apt install zsh
 sudo chsh $USER -s $(which zsh)
 ```
 * Follow instructions under [homebrew_ubuntu/README.md](homebrew_ubuntu/README.md) to install some tools by homebrew
-* Run `bob install stabel` and `bob use stable` to install latest neovim
+* Run `bob install stable` and `bob use stable` to install latest neovim
 * Run `curl -fsSL https://raw.githubusercontent.com/RivoLink/leaf/main/scripts/install.sh | sh` to install leaf, a markdown terminal viewer
 * Run Stow
 ``` sh
