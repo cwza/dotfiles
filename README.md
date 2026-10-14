@@ -18,6 +18,7 @@ stow karabiner
 stow borders
 stow ghostty
 
+stow cpbooster
 stow fd
 stow git
 stow lazygit
