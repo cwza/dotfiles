@@ -9,3 +9,5 @@ zsh/.config/zsh/.p10k.zsh
 
 karabiner/.config/karabiner/assets/
 karabiner/.config/karabiner/automatic_backups/
+
+yazi/.config/yazi/plugins

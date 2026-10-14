@@ -3,17 +3,13 @@
 ratio          = [ 1, 4, 3 ]
 show_hidden    = true
 
-# run yazi --clear-cache to take effect of preview changes
+# run ya cache clear to take effect of preview changes
 [preview]
 max_width       = 600
 max_height      = 900
 
-[[plugin.prepend_fetchers]]
-id  = "git"
-url = "*"
-run = "git"
-
-[[plugin.prepend_fetchers]]
-id  = "git"
-url = "*/"
-run = "git"
+[plugin]
+prepen_fetchers = [
+	{ url = "*",         run = "git", group = "git" },
+	{ url = "*/",         run = "git", group = "git" },
+]

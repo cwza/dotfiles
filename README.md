@@ -82,6 +82,7 @@ brew update
 brew upgrade
 bob update
 :lua vim.pack.update()  # run this line in neovim
+# in tmux type prefix+U type in all to update all tmux plugins
 ```
 * For Ubuntu
 ``` sh
@@ -91,4 +92,5 @@ brew update
 brew upgrade
 bob update
 :lua vim.pack.update()  # run this line in neovim
+# in tmux type prefix+U type in all to update all tmux plugins
 ```
